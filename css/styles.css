@@ -236,3 +236,20 @@ main .sobre-buzon{
         font-size: 20px;
     }
 }
+
+.login{
+    width: 100%;
+    height: 600px;
+    background: #43cea2; 
+    background: -webkit-linear-gradient(to right, hsl(210, 73%, 35%, 0.655), hsl(161, 59%, 54%,0.764)), url(../img/portada.jpg); 
+    background: linear-gradient(to right, hsla(210, 73%, 35%, 0.655), hsla(161, 59%, 54%, 0.764)), url(../img/portada.jpg); 
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.login-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
