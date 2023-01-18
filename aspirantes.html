@@ -1,23 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kinder | Aspirantes</title>
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <a href="index.html">Inicio</a></a>
-            <a href="buzon.html">Buzón</a>        
+            <a class="logo" href="index.html">Inicio</a>
+            <a href="aspirantes.html"><b>Aspirantes</b></a>
+            <a href="buzon.html">Buzón</a>   
+            <a href="login.html">Login</a>     
         </nav>
         <section class="textos-header">
-            <h1>Real educación</h1>
+            <h1>Real Segovia Kinder</h1>
             <h2>Potencia el futuro de tus hijos</h2>
         </section>
         <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C169.58,114.97 294.86,21.22 500.00,49.98 L500.84,151.48 L0.00,150.00 Z" style="stroke: none; fill: #ffff;"></path></svg></div>
     </header>
+    <main>
+        <section class="contenedor sobre-aspirantes">
+            <h2 class="titulo">Aspirantes</h2>
+            <div class="contenedor-sobre-aspirantes">
+                <div class="contenido-textos3">
+                <p>Deseas que tu hijo sea estudiante de esta casa de estudios, solo tienes que rellenar el siguiente formulario.</p>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor formulario" id="formulario">
+            <form action="">
+            <ul>
+                <ol>
+                    <label class="contenido-textos2" for="nombre">Nombre Aspirante</label>
+                    <input  type="text" id="nombre" name="nombre" placeholder="Perla Hernandez" required>
+                </ol>
+                <ol>
+                    <label class="contenido-textos2" for="nombreT">Nombre Tutor</label>
+                    <input  type="text" id="nombreT" name="nombreT" placeholder="David Hernandez" required>
+                </ol>
+                <ol>
+                    <label class="contenido-textos2" for="fechaN">Fecha de nacimiento</label>
+                    <input  type="date" id="fechaN" name="fechaN" placeholder="12/12/2022" required>
+                </ol>
+                <ol>
+                    <label>Genero</label>
+                    <select required>
+                        <option class="contenido-textos2" disabled>Seleccione un genero</option>
+                        <option class="contenido-textos2" value="">Mujer</option>
+                        <option class="contenido-textos2" value="">Hombre</option>
+                    </select>
+                </ol>
+                <ol>
+                    <label class="contenido-textos2" for="edad">Edad</label>
+                    <input  type="text" id="edad" name="edad" placeholder="3" required>
+                </ol>
+                <ol>
+                    <label class="contenido-textos2" for="curp">CURP</label>
+                    <input  type="text" id="curp" name="curp" placeholder="GAGD021101HPLLRVA6" required>
+                </ol>
+                <ol>
+                    <label class="contenido-textos2" for="email">Correo electronico tutor</label>
+                    <input  type="email" id="email" name="email" placeholder="alguien@example.com" required>
+                </ol>
+                <ol>
+                    <label class="contenido-textos2" for="acta">Acta de nacimiento</label>
+                    <input  type="file" id="acta" name="acta" accept=".pdf" placeholder="Ingrese PDF" required>
+                </ol>
+                <ol>
+                    <button>Enviar</button>
+                </ol>
+            </ul>
+            </form>
+        </section>
+        <br>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Telefono</h4>
+                <p>2223228377</p>
+            </div>
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>kinder@gmail.com</p>
+            </div> 
+            <div class="content-foo">
+                <h4>Ubicación</h4>
+                <p>Calle Las Margaritas, 105, colonia el Grande, Puebla Pue.</p>
+            </div>        
+        </div>
+        <h2 class="titulo-final">&copy; Galasoft</h2>
+    </footer>
+    <script src="js/formulario.js"></script>
 </body>
 </html>
