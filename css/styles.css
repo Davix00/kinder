@@ -29,7 +29,7 @@ body {
 /* Header */
 header {
   width: 100%;
-  height: 600px;
+  height: 500px;
   background: #43cea2;
   background: -webkit-linear-gradient(
       to right,
@@ -289,5 +289,11 @@ main .sobre-aspirantes{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.buscar{
+    height: 20px;
+    margin-right: 5px;
+    align-items: center;
 }
 
